@@ -14,6 +14,7 @@ print("The type of b is",type(b))
 print("The type of c is",type(c))
 print("The type of e is",type(e))
 print("#######################################")
+
 #Operators
 print("Addition:",a+d) #addition
 print("Subtraction:",a-d) #subtraction
@@ -22,5 +23,8 @@ print("Division:",a/d) #division
 print("(Modulus) Remainder:",a%d) #(Modulus) reminder
 print("Exponential:",a**2) #exponential
 print("Floor Division:",a//d) #floor divison 
+print("######## Day_01 Ends Here ########")
+
+
 
 
