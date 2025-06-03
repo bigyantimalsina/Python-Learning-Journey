@@ -35,6 +35,16 @@ a = int(input("Enter value of a: "))
 b = int(input("Enter value of b: "))
 average()
 
+# ✅Lambda Functions (Anonymous Functions):Short, unnamed functions usually used for simple operations.
+
+# Syntax: lambda arguments: expression
+#For Example:
+square = lambda x: x * x
+print(square(6))  # Output: 36
+
+add = lambda a, b: a + b
+print(add(4, 7))  # Output: 11
+
 
 # ✅ Function Arguments
 
@@ -62,5 +72,39 @@ def student_info(name, age):
     print(f"Age: {age}")
 
 student_info(age=20, name="Bigyan")  # Output: Name: Bigyan, Age: 20
+
+# 4️⃣ Variable-length Arguments (*args)
+# Used when we're not sure how many arguments will be passed to your function.
+# It collects multiple positional arguments into a tuple.
+#Syntax
+#def function_name(*args):
+    # for value in args:
+    #     print(value)
+#For Example:
+def add_numbers(*numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    print("Total:", total)
+
+add_numbers(1, 2, 3)            # Total: 6
+add_numbers(10, 20, 30, 40)     # Total: 100
+
+
+# 5️⃣ Keyword Variable-length Arguments (**kwargs)
+# Used to handle unknown number of keyword arguments.
+# It collects them into a dictionary.
+
+# Syntax
+# def function_name(**kwargs):
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
+
+# For Example:
+def print_info(**info):
+    for key, value in info.items():   #.items() → loop over key-value pairs (most common with kwargs)
+        print(f"{key}: {value}")
+
+print_info(name="Bigyan", age=20, country="Nepal")
 
 
