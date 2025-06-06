@@ -1,6 +1,6 @@
 # Day 04 – Python Lists
 
-# 🧠 List: Ordered and changeable collection of items
+# 🧠 List: Ordered and mutable (changeable) collection of items
 # Lists are defined using square brackets [] and can contain mixed data types.
 
 # Basic List
